@@ -2,7 +2,11 @@ package main
 
 import (
 	"github.com/astaxie/beego"
+	"github.com/astaxie/beego/context"
+	_ "iHome_go/models"
 	_ "iHome_go/routers"
+	"net/http"
+	"strings"
 )
 
 func ignoreStaticPath() {
